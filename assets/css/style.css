@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/noose1000getty2.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.rowHeight {
+    height: 600px;
+}
+
+h1 {
+    font-size: 60px; 
+}
+
+p {
+    font-size: 40px;
+}
+
+#answer-text {
+    font-size: 100px; 
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textColor {
+    color: aliceblue;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    body {
+    background-size: auto;
+    }
+} 
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-size: auto; 
+    }
+} 
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-size: cover;
+    }
+} 
