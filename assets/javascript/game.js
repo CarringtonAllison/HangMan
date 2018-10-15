@@ -3,10 +3,6 @@ var wins = 0;
 var guessesLeft = 10;
 var lettersUsed = [];
 var userAnswer = [];
-var rightWords = [];
-var missedWords = [];
-
-
 
 
 //linking variables to the ID's in HTML 
@@ -45,12 +41,6 @@ function newGame() {
     });
 }
 
-
-
-
-
-
-
 //invokes function once user releases a key
 document.onkeyup = function (event) {
 
@@ -66,9 +56,6 @@ document.onkeyup = function (event) {
         }
 
         lettersUsed.push(userInput);
-
-
-        console.log(lettersUsed)
 
         if(computerGuess.indexOf(userInput) !== -1){
             for (var i = 0; i < computerGuess.length; i++) {
@@ -97,13 +84,6 @@ document.onkeyup = function (event) {
             newGame();
             guessesLeft--;
         };
-
-
-
-
-
-
-
 
         // Taking the variables that are linked to the HTML and replacing with text content 
         winsText.textContent = "Wins: " + wins;
